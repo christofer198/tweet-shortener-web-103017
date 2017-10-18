@@ -29,7 +29,7 @@ end
 
 def shortened_tweet_truncator(tweet)
     sub = word_substituter(tweet)
-    if sub > 140
+    if sub.length > 140
         puts "#{sub[1...137]}..."
     else
         sub
