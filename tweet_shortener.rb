@@ -6,7 +6,7 @@ end
 def word_substituter(tweet)
   arr = tweet.split(" ")
     arr.each_with_index do |word,index|
-        if dictionary[word] != nil
+        if dictionary[word.downcase] != nil
             arr[index] = dictionary[word]
         end
     end
